@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wahyudi Terapis - Pijat Syaraf & Bekam Profesional</title>
+  <meta name="description" content="Wahyudi Terapis melayani pijat syaraf, bekam, terapi kesleo, salah urat, otot ketarik, lutut kaku, kesemutan, dan keluhan badan lainnya dengan pendekatan nyaman dan profesional.">
+  <meta name="keywords" content="Wahyudi Terapis, pijat syaraf, bekam profesional, terapi kesleo, salah urat, otot ketarik, lutut kaku, kesemutan, pijat bekam Sukoharjo">
+  <meta name="author" content="Wahyudi Terapis">
+  <meta property="og:title" content="Wahyudi Terapis - Pijat Syaraf & Bekam Profesional">
+  <meta property="og:description" content="Konsultasikan keluhan badan Anda melalui WhatsApp untuk memilih layanan terapi yang sesuai.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80">
+  <meta name="theme-color" content="#06120d">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Wahyudi Terapis",
+    "description": "Layanan pijat syaraf, bekam, terapi kesleo, salah urat, otot ketarik, lutut kaku, kesemutan, dan keluhan badan lainnya.",
+    "telephone": "+6285647678910",
+    "url": "https://wa.me/6285647678910",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ID"
+    },
+    "areaServed": "Indonesia",
+    "sameAs": ["https://www.tiktok.com/@wahyuditerapi"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #06120d;
+      --bg-2: #081b13;
+      --panel: rgba(255,255,255,.075);
+      --panel-strong: rgba(255,255,255,.12);
+      --line: rgba(255,255,255,.15);
+      --text: #f7fff9;
+      --muted: #acc0b5;
+      --green: #4df0a2;
+      --mint: #8affcb;
+      --gold: #f7d36c;
+      --cyan: #58e6ff;
+      --blue: #6ea4ff;
+      --ink: #06120d;
+      --shadow: 0 30px 90px rgba(0,0,0,.42);
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    body:before {
+      content: "";
+      position: fixed;
+      inset: -25%;
+      z-index: -4;
+      background:
+        radial-gradient(circle at 17% 18%, rgba(77,240,162,.28), transparent 28%),
+        radial-gradient(circle at 84% 12%, rgba(88,230,255,.20), transparent 30%),
+        radial-gradient(circle at 68% 78%, rgba(247,211,108,.16), transparent 30%),
+        radial-gradient(circle at 22% 84%, rgba(110,164,255,.18), transparent 30%),
+        linear-gradient(135deg, #06120d 0%, #0b251a 52%, #06120d 100%);
+      animation: aurora 16s ease-in-out infinite alternate;
+      filter: saturate(1.16);
+    }
+    body:after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+    }
+    @keyframes aurora {
+      from { transform: translate3d(-2%, -1%, 0) rotate(0deg) scale(1); }
+      to { transform: translate3d(2%, 2%, 0) rotate(5deg) scale(1.06); }
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+    #particles {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: .55;
+    }
+    .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      background: rgba(6,18,13,.76);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 950;
+    }
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      color: var(--ink);
+      background: linear-gradient(135deg, var(--gold), var(--green));
+      box-shadow: 0 0 36px rgba(77,240,162,.22);
+      font-weight: 950;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      font-weight: 900;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      color: var(--ink);
+      background: linear-gradient(135deg, var(--gold), var(--green) 55%, var(--cyan));
+      box-shadow: 0 18px 48px rgba(77,240,162,.23), inset 0 1px 0 rgba(255,255,255,.55);
+    }
+    .btn-ghost {
+      border-color: rgba(255,255,255,.18);
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(16px);
+    }
+    .hero {
+      min-height: calc(100vh - 74px);
+      display: grid;
+      align-items: center;
+      padding: 72px 0 42px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 44px;
+      align-items: center;
+    }
+    .eyebrow, .mini-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--green);
+      border: 1px solid rgba(77,240,162,.28);
+      background: rgba(77,240,162,.085);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 850;
+    }
+    h1, h2, h3 { margin: 0; line-height: 1.05; letter-spacing: 0; }
+    h1 {
+      margin-top: 20px;
+      max-width: 900px;
+      font-size: clamp(42px, 7vw, 82px);
+    }
+    h2 { font-size: clamp(31px, 4vw, 54px); }
+    h3 { font-size: 21px; }
+    .gradient-text {
+      background: linear-gradient(100deg, var(--text), var(--green) 32%, var(--cyan) 62%, var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .lead {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+    }
+    .proof-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; color: #dcf7ec; font-size: 13px; }
+    .proof-item {
+      border: 1px solid rgba(255,255,255,.13);
+      background: rgba(255,255,255,.06);
+      border-radius: 999px;
+      padding: 7px 11px;
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .countdown {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(72px, 1fr));
+      gap: 10px;
+      max-width: 460px;
+      margin-top: 24px;
+    }
+    .glass, .card, .stat, .timebox, .faq-item, .quote, .consult-card, .dashboard, .before-after-card, .flow-node, .video-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.095), rgba(255,255,255,.055));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+    .timebox { padding: 12px; text-align: center; }
+    .timebox strong { display: block; font-size: 25px; line-height: 1; }
+    .timebox span { color: var(--muted); font-size: 12px; }
+    .visual-stack {
+      position: relative;
+      min-height: 600px;
+      display: grid;
+      place-items: center;
+      perspective: 1200px;
+    }
+    .visual-stack:before {
+      content: "";
+      position: absolute;
+      width: 84%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(77,240,162,.24), rgba(88,230,255,.14), transparent 64%);
+      filter: blur(10px);
+    }
+    .hero-photo {
+      position: relative;
+      z-index: 2;
+      width: min(570px, 100%);
+      min-height: 520px;
+      border-radius: 18px;
+      background:
+        linear-gradient(180deg, rgba(6,18,13,.04), rgba(6,18,13,.46)),
+        url("https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80") center/cover;
+      box-shadow: 0 34px 90px rgba(0,0,0,.48);
+      transform: rotate(-2deg);
+      animation: floaty 5.5s ease-in-out infinite;
+      overflow: hidden;
+    }
+    .hero-photo:after {
+      content: "Pijat Syaraf | Bekam | Konsultasi WA";
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(6,18,13,.72);
+      border: 1px solid rgba(255,255,255,.18);
+      color: var(--text);
+      font-weight: 900;
+      backdrop-filter: blur(14px);
+    }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0) rotate(-1deg); }
+      50% { transform: translateY(-15px) rotate(1deg); }
+    }
+    .dashboard {
+      position: absolute;
+      right: -10px;
+      bottom: 22px;
+      z-index: 3;
+      width: min(430px, 84%);
+      padding: 16px;
+      transform: rotateX(9deg) rotateY(-12deg) rotateZ(1deg);
+      background: linear-gradient(135deg, rgba(8,30,22,.95), rgba(8,42,34,.84));
+    }
+    .dash-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; margin-bottom: 14px; }
+    .dash-dots { display: flex; gap: 6px; }
+    .dash-dots span { width: 8px; height: 8px; border-radius: 50%; background: var(--green); opacity: .85; }
+    .dash-title { color: var(--muted); font-size: 12px; font-weight: 850; }
+    .dash-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 10px; }
+    .dash-panel {
+      min-height: 86px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 8px;
+      background: rgba(255,255,255,.055);
+      padding: 12px;
+      overflow: hidden;
+    }
+    .bar { height: 8px; border-radius: 999px; margin: 9px 0; background: linear-gradient(90deg, var(--green), var(--cyan)); }
+    .bar:nth-child(2) { width: 72%; }
+    .bar:nth-child(3) { width: 54%; background: linear-gradient(90deg, var(--blue), var(--gold)); }
+    .pulse-dot {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 4px auto 0;
+      background: conic-gradient(var(--green) 0 78%, rgba(255,255,255,.12) 78% 100%);
+      color: var(--text);
+      font-weight: 950;
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%, 100% { transform: scale(.96); } 50% { transform: scale(1.06); } }
+    section { padding: 88px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
+    .section-head p { max-width: 640px; margin: 0; color: var(--muted); }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .card, .quote, .before-after-card, .video-card { padding: 24px; }
+    .card, .quote, .consult-card, .video-card { transition: transform .22s ease, border-color .22s ease; }
+    .card:hover, .quote:hover, .consult-card:hover, .video-card:hover { transform: translateY(-4px); border-color: rgba(77,240,162,.34); }
+    .icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      color: var(--ink);
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--green), var(--cyan));
+      font-weight: 950;
+    }
+    .card p, .quote p, .before-after-card p, .video-card p { color: var(--muted); margin: 12px 0 0; }
+    .video-embed-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+    .video-card h3 { margin-bottom: 14px; }
+    .video-card .tiktok-embed {
+      width: 100% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .integration-cloud { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 28px; }
+    .integration {
+      min-height: 74px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      color: #dcf7ec;
+      font-weight: 850;
+      transition: transform .22s ease, border-color .22s ease, background .22s ease;
+    }
+    .integration:hover { transform: translateY(-4px); border-color: rgba(77,240,162,.44); background: rgba(77,240,162,.10); }
+    .stats-band {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(77,240,162,.10), rgba(88,230,255,.09), rgba(247,211,108,.10));
+    }
+    .stat { padding: 24px; text-align: center; }
+    .stat strong { display: block; color: var(--green); font-size: clamp(34px, 4vw, 48px); line-height: 1; }
+    .stat span { display: block; margin-top: 8px; color: var(--muted); }
+    .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .before-after-card.before { border-color: rgba(247,211,108,.28); }
+    .before-after-card.after { border-color: rgba(77,240,162,.32); }
+    .workflow-map { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; overflow: hidden; }
+    .workflow-map:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--green), var(--cyan), var(--gold), transparent);
+      animation: flowline 2.5s linear infinite;
+    }
+    @keyframes flowline { from { filter: hue-rotate(0deg); opacity: .55; } to { filter: hue-rotate(80deg); opacity: 1; } }
+    .flow-node {
+      position: relative;
+      z-index: 2;
+      min-height: 122px;
+      display: grid;
+      align-content: center;
+      padding: 18px;
+      text-align: center;
+    }
+    .flow-node strong { display: block; color: var(--green); margin-bottom: 6px; }
+    .check-list { padding: 0; margin: 18px 0 0; list-style: none; color: var(--muted); }
+    .check-list li { margin: 10px 0; }
+    .check-list li:before { content: "\2713"; color: var(--green); font-weight: 950; margin-right: 9px; }
+    .consult-card { position: relative; overflow: hidden; padding: 32px; }
+    .consult-card:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(77,240,162,.15), rgba(88,230,255,.08), rgba(247,211,108,.13));
+      pointer-events: none;
+    }
+    .consult-card > * { position: relative; z-index: 1; }
+    .consult-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 24px; align-items: center; }
+    .badge { display: inline-flex; color: var(--ink); background: linear-gradient(135deg, var(--gold), var(--green)); border-radius: 999px; padding: 7px 11px; font-size: 12px; font-weight: 950; }
+    .testimonial-wrap { overflow: hidden; }
+    .testimonial-track { display: flex; gap: 16px; animation: carousel 24s linear infinite; }
+    .quote { min-width: 360px; flex: 0 0 360px; }
+    @keyframes carousel { from { transform: translateX(0); } to { transform: translateX(calc(-360px * 3 - 48px)); } }
+    .faq { display: grid; gap: 12px; }
+    .faq-button {
+      width: 100%;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 0 18px;
+      color: var(--text);
+      background: transparent;
+      border: 0;
+      text-align: left;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .faq-button span:last-child { color: var(--green); font-size: 24px; }
+    .faq-content { max-height: 0; overflow: hidden; color: var(--muted); transition: max-height .26s ease; }
+    .faq-content p { margin: 0; padding: 0 18px 18px; }
+    .faq-item.active .faq-content { max-height: 230px; }
+    .map-wrap {
+      padding: 14px;
+      overflow: hidden;
+    }
+    .map-wrap iframe { width: 100%; height: 420px; border: 0; border-radius: 8px; }
+    .final-cta {
+      text-align: center;
+      padding: 56px 28px;
+      background:
+        linear-gradient(135deg, rgba(77,240,162,.15), rgba(88,230,255,.08), rgba(247,211,108,.13)),
+        rgba(255,255,255,.065);
+    }
+    .final-cta p { max-width: 720px; margin: 16px auto 0; color: var(--muted); }
+    footer { padding: 34px 0 92px; color: var(--muted); border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .wa-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 70;
+      min-width: 62px;
+      height: 62px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border-radius: 999px;
+      color: var(--ink);
+      background: #25d366;
+      font-weight: 950;
+      box-shadow: 0 18px 42px rgba(66,240,168,.34);
+      border: 1px solid rgba(255,255,255,.38);
+    }
+    .sticky-cta {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      z-index: 65;
+      width: min(650px, calc(100% - 112px));
+      transform: translateX(-50%) translateY(90px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+    .sticky-cta.show { transform: translateX(-50%) translateY(0); opacity: 1; pointer-events: auto; }
+    .sticky-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 10px;
+      background: rgba(6,18,13,.84);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 18px 48px rgba(0,0,0,.38);
+    }
+    .sticky-inner strong { color: var(--gold); }
+    [data-aos] { opacity: 0; transform: translateY(24px); transition: opacity .72s ease, transform .72s ease; }
+    [data-aos].show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 980px) {
+      .nav-links { display: none; }
+      .hero-grid, .consult-layout, .before-after { grid-template-columns: 1fr; }
+      .visual-stack { min-height: 520px; }
+      .grid-3, .grid-4, .integration-cloud, .workflow-map, .video-embed-grid { grid-template-columns: repeat(2, 1fr); }
+      .workflow-map:before { display: none; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 12px; }
+      .dashboard { right: 0; bottom: 0; }
+    }
+    @media (max-width: 620px) {
+      .container { width: min(100% - 28px, 1180px); }
+      .nav-inner { min-height: 66px; }
+      .brand span:last-child { max-width: 170px; overflow: hidden; text-overflow: ellipsis; }
+      .nav .btn { display: none; }
+      .btn { width: 100%; min-height: 52px; }
+      .cta-row { width: 100%; }
+      .countdown, .grid-2, .grid-3, .grid-4, .integration-cloud, .workflow-map, .video-embed-grid { grid-template-columns: 1fr 1fr; }
+      .card, .quote, .consult-card, .before-after-card, .video-card { padding: 18px; }
+      section { padding: 64px 0; }
+      .hero { padding: 42px 0 34px; }
+      .visual-stack { min-height: 430px; }
+      .hero-photo { width: 100%; min-height: 360px; }
+      .dashboard { width: 92%; padding: 12px; }
+      .quote { min-width: 300px; flex-basis: 300px; }
+      .sticky-cta { width: calc(100% - 92px); }
+      .sticky-inner { display: block; }
+      .sticky-inner span { display: block; margin-bottom: 8px; text-align: center; }
+      .wa-float { width: 62px; padding: 0; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Wahyudi Terapis">
+        <span class="brand-mark">WT</span>
+        <span>Wahyudi Terapis</span>
+      </a>
+      <div class="nav-links">
+        <a href="#layanan">Layanan</a>
+        <a href="#workflow">Alur</a>
+        <a href="#video">Video</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20konsultasi%20terapi" target="_blank" rel="noopener">Konsultasi WA</a>
+    </div>
+  </nav>
+
+  <main id="home">
+    <header class="hero">
+      <div class="container hero-grid">
+        <div data-aos>
+          <span class="eyebrow">Wahyudi Terapis</span>
+          <h1>Spesialis Pijat Syaraf & Bekam Profesional
+          <span class="gradient-text">Terapi Aman - Nyaman - Berpengalaman </span></h1>
+          <p class="lead">Wahyudi Terapis membantu menangani keluhan badan seperti pegal, salah urat, otot ketarik, lutut kaku, kesemutan, kesleo, dan badan terasa berat dengan pendekatan yang menyesuaikan kondisi Anda.</p>
+          <div class="proof-row">
+            <span class="proof-item">Konsultasi WhatsApp</span>
+            <span class="proof-item">Pijat Syaraf</span>
+            <span class="proof-item">Bekam Profesional</span>
+            <span class="proof-item">Booking Jadwal</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20booking%20jadwal%20terapi" target="_blank" rel="noopener">Booking via WhatsApp</a>
+            <a class="btn btn-ghost" href="#layanan">Lihat Layanan</a>
+          </div>
+          <div class="countdown" aria-label="Countdown prioritas booking">
+            <div class="timebox"><strong id="days">00</strong><span>Hari</span></div>
+            <div class="timebox"><strong id="hours">00</strong><span>Jam</span></div>
+            <div class="timebox"><strong id="minutes">00</strong><span>Menit</span></div>
+            <div class="timebox"><strong id="seconds">00</strong><span>Detik</span></div>
+          </div>
+        </div>
+        <div class="visual-stack" data-aos>
+          <div class="hero-photo"></div>
+          <div class="dashboard" aria-label="Mockup dashboard layanan">
+            <div class="dash-top">
+              <div class="dash-dots"><span></span><span></span><span></span></div>
+              <div class="dash-title">Terapi Plan</div>
+            </div>
+            <div class="dash-grid">
+              <div class="dash-panel">
+                <strong>Keluhan & Prioritas</strong>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="dash-panel">
+                <strong>Nyaman</strong>
+                <div class="pulse-dot">OK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="layanan">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Layanan terapi</h2>
+          <p>Pilih layanan sesuai keluhan. Jika masih ragu, konsultasikan dulu melalui WhatsApp agar diarahkan dengan lebih tepat.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-aos><div class="icon">PS</div><h3>Pijat Syaraf</h3><p>Membantu merilekskan otot, melancarkan peredaran darah, dan mengurangi rasa kaku pada tubuh.</p></article>
+          <article class="card" data-aos><div class="icon">BK</div><h3>Bekam</h3><p>Terapi bekam untuk membantu tubuh terasa lebih ringan, rileks, dan segar kembali.</p></article>
+          <article class="card" data-aos><div class="icon">KU</div><h3>Kesleo & Salah Urat</h3><p>Penanganan untuk keluhan akibat salah gerak, keseleo ringan, atau otot terasa tertarik.</p></article>
+          <article class="card" data-aos><div class="icon">OK</div><h3>Otot Ketarik</h3><p>Cocok untuk keluhan setelah aktivitas berat, olahraga, kerja fisik, atau gerakan mendadak.</p></article>
+          <article class="card" data-aos><div class="icon">LK</div><h3>Lutut Kaku</h3><p>Membantu mengurangi rasa kaku dan tidak nyaman pada area lutut serta persendian.</p></article>
+          <article class="card" data-aos><div class="icon">BP</div><h3>Badan Pegal & Lelah</h3><p>Terapi relaksasi untuk badan terasa capek, berat, pegal-pegal, dan kurang bertenaga.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Before vs After</h2>
+          <p>Landing page ini menekankan edukasi dan konsultasi, bukan sekadar daftar layanan.</p>
+        </div>
+        <div class="before-after">
+          <article class="before-after-card before" data-aos>
+            <span class="mini-pill">Before</span>
+            <h3>Keluhan ditahan sampai mengganggu aktivitas</h3>
+            <p>Badan pegal, kesemutan, salah urat, atau lutut kaku sering dibiarkan karena bingung harus mulai dari mana.</p>
+          </article>
+          <article class="before-after-card after" data-aos>
+            <span class="mini-pill">After</span>
+            <h3>Konsultasi dulu, lalu pilih penanganan</h3>
+            <p>Anda bisa menjelaskan keluhan via WhatsApp, lalu diarahkan ke layanan yang lebih sesuai dengan kondisi tubuh.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>How It Works</h2>
+          <p>Alur dibuat sederhana agar calon pelanggan merasa aman sebelum datang terapi.</p>
+        </div>
+        <div class="workflow-map">
+          <div class="flow-node" data-aos><strong>Chat WA</strong><span>Ceritakan keluhan yang dirasakan.</span></div>
+          <div class="flow-node" data-aos><strong>Konsultasi</strong><span>Diarahkan layanan yang sesuai.</span></div>
+          <div class="flow-node" data-aos><strong>Booking</strong><span>Pilih jadwal yang nyaman.</span></div>
+          <div class="flow-node" data-aos><strong>Terapi</strong><span>Penanganan sopan dan profesional.</span></div>
+          <div class="flow-node" data-aos><strong>Aftercare</strong><span>Dapat arahan ringan setelah terapi.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Bonus edukasi yang didapat</h2>
+          <p>Setiap konsultasi bisa membantu Anda memahami kebiasaan tubuh yang perlu diperhatikan setelah terapi.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card" data-aos><h3>Panduan keluhan</h3><p>Arah awal untuk menjelaskan pegal, kaku, kesemutan, atau salah gerak.</p></article>
+          <article class="card" data-aos><h3>Rekomendasi layanan</h3><p>Bantuan memilih pijat syaraf, bekam, atau kombinasi sesuai kebutuhan.</p></article>
+          <article class="card" data-aos><h3>Tips setelah terapi</h3><p>Arahan ringan agar tubuh tetap nyaman setelah sesi terapi.</p></article>
+          <article class="card" data-aos><h3>Reminder jadwal</h3><p>Konsultasi WA memudahkan pengaturan jadwal tanpa perlu menunggu lama.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="paket">
+      <div class="container">
+        <div class="consult-card" data-aos>
+          <div class="consult-layout">
+            <div>
+              <span class="badge">Konsultasi prioritas</span>
+              <h2 style="margin-top:16px">Ingin tahu layanan yang cocok?</h2>
+              <p class="lead">Nominal tidak dicantumkan di halaman ini agar calon pelanggan fokus pada edukasi dan memilih layanan berdasarkan keluhan. Untuk informasi lebih lanjut, silakan konsultasi melalui WhatsApp.</p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20konsultasi%20layanan%20yang%20cocok" target="_blank" rel="noopener">Konsultasi via WhatsApp</a>
+                <a class="btn btn-ghost" href="#faq">Baca FAQ</a>
+              </div>
+            </div>
+            <div>
+              <h3>Yang bisa ditanyakan</h3>
+              <ul class="check-list">
+                <li>Keluhan badan pegal, berat, atau kaku</li>
+                <li>Kesleo ringan, salah urat, atau otot ketarik</li>
+                <li>Lutut kaku, kesemutan, dan area tidak nyaman</li>
+                <li>Rekomendasi pijat syaraf, bekam, atau kombinasi</li>
+                <li>Jadwal terapi dan lokasi Wahyudi Terapis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Video terapi & edukasi</h2>
+          <p>Video TikTok Wahyudi Terapis ditampilkan langsung di halaman sebagai gambaran aktivitas layanan dan edukasi.</p>
+        </div>
+        <div class="video-embed-grid">
+          <article class="video-card" data-aos>
+            <h3>Video Terapi 1</h3>
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wahyuditerapi/video/7623801811891277076" data-video-id="7623801811891277076" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@wahyuditerapi" href="https://www.tiktok.com/@wahyuditerapi?refer=embed">@wahyuditerapi</a> Masih sering nyeri pinggang menjalar sampai kaki? 😫 Mungkin itu gejala saraf kejepit! Jangan dibiarkan menahun, yuk tangani dengan cara yang tepat dan profesional. Terapi yang benar bisa membantu kamu kembali beraktivitas tanpa nyeri. ✨ ​Konsultasi lebih lanjut klik link di bio ya!  📍 Lokasi: Sukoharjo&#34; <a title="sarafkejepit" target="_blank" href="https://www.tiktok.com/tag/sarafkejepit?refer=embed">#sarafkejepit</a>  <a title="sakitpinggang" target="_blank" href="https://www.tiktok.com/tag/sakitpinggang?refer=embed">#sakitpinggang</a> <a title="terapisarafkejepit" target="_blank" href="https://www.tiktok.com/tag/terapisarafkejepit?refer=embed">#terapisarafkejepit</a>  <a title="sukoharjo24jam" target="_blank" href="https://www.tiktok.com/tag/sukoharjo24jam?refer=embed">#sukoharjo24jam</a>  <a title="fypシ゚" target="_blank" href="https://www.tiktok.com/tag/fyp%E3%82%B7%E3%82%9A?refer=embed">#fypシ゚</a> <a target="_blank" title="♬ Dj Enak Dong Sound JJ Old Mengkane - Yoga Ardiansyah RMX" href="https://www.tiktok.com/music/Dj-Enak-Dong-Sound-JJ-Old-Mengkane-7413639309809780753?refer=embed">♬ Dj Enak Dong Sound JJ Old Mengkane - Yoga Ardiansyah RMX</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+          </article>
+          <article class="video-card" data-aos>
+            <h3>Video Terapi 2</h3>
+            <<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wahyuditerapi/video/7632618379815292180" data-video-id="7632618379815292180" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@wahyuditerapi" href="https://www.tiktok.com/@wahyuditerapi?refer=embed">@wahyuditerapi</a> Jangan sepelekan jatuh! 😱 Tadinya bahu kaku banget sampe tangan terasa kesemutan dan engkel kaki sakit buat jalan aja susah. Alhamdulillah, setelah dibawa ke Wahyudi Terapis sudah membaik dan bisa berjalan norma kembali l! Siapa yang punya keluhan sama? 👇  <a title="wahyuditerapis" target="_blank" href="https://www.tiktok.com/tag/wahyuditerapis?refer=embed">#WahyudiTerapis</a> <a title="pijatcidera" target="_blank" href="https://www.tiktok.com/tag/pijatcidera?refer=embed">#PijatCidera</a> <a title="bahukaku" target="_blank" href="https://www.tiktok.com/tag/bahukaku?refer=embed">#BahuKaku</a> <a title="engkelcidera" target="_blank" href="https://www.tiktok.com/tag/engkelcidera?refer=embed">#engkelcidera</a>  <a title="terapicidera" target="_blank" href="https://www.tiktok.com/tag/terapicidera?refer=embed">#TerapiCidera</a> <a target="_blank" title="♬ suara asli - Broster" href="https://www.tiktok.com/music/suara-asli-7632618427152075538?refer=embed">♬ suara asli - Broster</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+          </article>
+          <article class="video-card" data-aos>
+            <h3>Video Terapi 3</h3>
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wahyuditerapi/video/7637549374532291861" data-video-id="7637549374532291861" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@wahyuditerapi" href="https://www.tiktok.com/@wahyuditerapi?refer=embed">@wahyuditerapi</a> ✨ TESTIMONI IBU BAYAN ✨ Sering mengalami kaki dan tangan kesemutan sampai bikin tidak nyaman buat aktivitas 😣 Sudah dicoba dipijat biasa tapi belum terasa maksimal… Alhamdulillah setelah terapi di Wahyudi Terapis, keluhan kesemutan berangsur membaik dan badan terasa lebih enak 🙏 Terima kasih sudah mempercayakan terapi di tempat kami 💪 Semoga sehat selalu dan bisa beraktivitas normal kembali ✨ ✅ Kesemutan ✅ Pegal &#38; kaku ✅ Salah urat ✅ Syaraf kejepit ✅ Otot ketarik 📍Wahyudi Terapis Pijat Syaraf &#38; Bekam Profesional <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a> <a title="kesemutan" target="_blank" href="https://www.tiktok.com/tag/kesemutan?refer=embed">#kesemutan</a> <a title="terapi" target="_blank" href="https://www.tiktok.com/tag/terapi?refer=embed">#terapi</a> <a title="pijat" target="_blank" href="https://www.tiktok.com/tag/pijat?refer=embed">#pijat</a> <a target="_blank" title="♬ suara asli - Broster" href="https://www.tiktok.com/music/suara-asli-7637549437648128789?refer=embed">♬ suara asli - Broster</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+          </article>
+          <article class="video-card" data-aos>
+            <h3>Video Terapi 4</h3>
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wahyuditerapi/video/7637587223583509778" data-video-id="7637587223583509778" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@wahyuditerapi" href="https://www.tiktok.com/@wahyuditerapi?refer=embed">@wahyuditerapi</a> <p>Jangan sepelekan badan yang sering kaku dan pegal-pegal! Tonton sampai habis perubahannya. 🙌 Terapi pijat syaraf, relaksasi otot, sampai penanganan dislokasi sendi ini bisa bantu ngembaliin fungsi tubuh kamu jadi enteng lagi. Nggak heran kan mbaknya sampai tersenyum lega di akhir sesi. 😊 Yuk sayangi badan kalian, jangan nunggu parah baru diterapi. Ada keluhan di area mana nih? Cerita di komen ya! 👇 #terapisendi #pijatsyaraf #relaksasiotot #sukoharjomakmur #infosolo</p> <a target="_blank" title="♬ suara asli  - Broster" href="https://www.tiktok.com/music/suara-asli-Broster-7637587290604473089?refer=embed">♬ suara asli  - Broster</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+          </article>
+          <article class="video-card" data-aos>
+            <h3>Video Terapi 5</h3>
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wahyuditerapi/video/7633507882075540756" data-video-id="7633507882075540756" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@wahyuditerapi" href="https://www.tiktok.com/@wahyuditerapi?refer=embed">@wahyuditerapi</a> Mas Bimbo datang dengan boyok rengkek-rengkek koyo wong tuwek, pulang dengan senyum bahagia 😎🔥 Katanya khasiatnya langsung terbukti nyata, tidak sampe setengah jam, boyokku langsung mari (sembuh)! buat yang sering boyok sakit, pundak berat, atau capek kerja... waktunya giliran kamu 👌 📍Datang Boyoken, pulang  Full Senyum 📩 Booking DM sekarang <a title="testimoni" target="_blank" href="https://www.tiktok.com/tag/testimoni?refer=embed">#testimoni</a> <a title="terapi" target="_blank" href="https://www.tiktok.com/tag/terapi?refer=embed">#terapi</a> <a title="boyoksakit" target="_blank" href="https://www.tiktok.com/tag/boyoksakit?refer=embed">#boyoksakit</a> <a title="fypシ" target="_blank" href="https://www.tiktok.com/tag/fyp%E3%82%B7?refer=embed">#fypシ</a> <a title="creatorsearchinsights" target="_blank" href="https://www.tiktok.com/tag/creatorsearchinsights?refer=embed">#creatorsearchinsights</a> <a target="_blank" title="♬ suara asli - Broster" href="https://www.tiktok.com/music/suara-asli-7633507934383508231?refer=embed">♬ suara asli - Broster</a> </section> </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </article>
+          <article class="video-card" data-aos>
+            <h3>Video Terapi 6</h3>
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wahyuditerapi/video/7626345998821969173" data-video-id="7626345998821969173" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@wahyuditerapi" href="https://www.tiktok.com/@wahyuditerapi?refer=embed">@wahyuditerapi</a> Alhamdulillah, satu lagi bukti nyata! Mas @Taufik.Lotush  dari Polokarto sebelumnya mengalami keluhan serius di sendi bahu pasca kecelakaan. Rasa kesemutan menjalar dari tangan kiri sampai kaki kiri, pasti rasanya sangat tidak nyaman untuk aktivitas sehari-hari. ​Setelah rutin menjalani terapi, keluhan tersebut berangsur hilang dan sekarang sudah sembuh total. Mantap!! Sak Jos e! Terima kasih atas kepercayaannya..🙏🙏 <a title="syarafkejepit" target="_blank" href="https://www.tiktok.com/tag/syarafkejepit?refer=embed">#syarafkejepit</a>  <a title="ciderabahu" target="_blank" href="https://www.tiktok.com/tag/ciderabahu?refer=embed">#ciderabahu</a>  <a title="livehighlights" target="_blank" href="https://www.tiktok.com/tag/livehighlights?refer=embed">#livehighlights</a>  <a title="pijatsyaraf" target="_blank" href="https://www.tiktok.com/tag/pijatsyaraf?refer=embed">#pijatsyaraf</a> <a target="_blank" title="♬ Promotional - FlyFlyMusic" href="https://www.tiktok.com/music/Promotional-7023375768554047489?refer=embed">♬ Promotional - FlyFlyMusic</a> </section> </blockquote> 
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoni">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Testimoni carousel</h2>
+          <p>Beberapa impresi pelanggan setelah berkonsultasi dan melakukan terapi.</p>
+        </div>
+        <div class="testimonial-wrap" data-aos>
+          <div class="testimonial-track">
+            <article class="quote"><h3>Mas Andri</h3><p>"Badan sebelumnya terasa berat dan pegal. Setelah terapi jadi lebih enteng dan nyaman."</p></article>
+            <article class="quote"><h3>Bu Bayan</h3><p>"Keluhan kaki dan tangan sering kesemutan terasa jauh lebih nyaman setelah diterapi."</p></article>
+            <article class="quote"><h3>Pelanggan</h3><p>"Pelayanannya ramah, sopan, dan bisa konsultasi dulu sebelum terapi."</p></article>
+            <article class="quote"><h3>Mas Rudi</h3><p>"Booking lewat WhatsApp lebih mudah karena bisa cerita keluhan dulu."</p></article>
+            <article class="quote"><h3>Ibu Sari</h3><p>"Penanganannya tenang dan tidak terburu-buru, jadi terasa lebih nyaman."</p></article>
+            <article class="quote"><h3>Pelanggan</h3><p>"Cocok untuk badan yang terasa kaku setelah aktivitas berat."</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lokasi">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Lokasi Wahyudi Terapis</h2>
+          <p>Silakan lihat lokasi melalui Google Maps atau hubungi WhatsApp untuk memastikan jadwal dan arahan lokasi.</p>
+        </div>
+        <div class="map-wrap glass" data-aos>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126528.19426104252!2d110.73147285033946!3d-7.682494480979212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a3e956bf921ed%3A0x7e327736b84f3260!2sWAHYUDI%20TERAPIS!5e0!3m2!1sid!2sid!4v1783435025902!5m2!1sid!2sid" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="cta-row" style="justify-content:center">
+          <a class="btn btn-primary" href="https://www.google.com/maps/place/WAHYUDI+TERAPIS/@-7.6835582,110.8084904,17.24z/data=!4m6!3m5!1s0x2e7a3e956bf921ed:0x7e327736b84f3260!8m2!3d-7.6836092!4d110.8112094!16s%2Fg%2F11clhsj525?entry=ttu" target="_blank" rel="noopener">Buka Google Maps</a>
+          <a class="btn btn-ghost" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20tanya%20lokasi%20dan%20jadwal" target="_blank" rel="noopener">Tanya Lokasi via WA</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Garansi & FAQ</h2>
+          <p>Informasi penting sebelum melakukan terapi. Untuk kondisi medis serius, tetap konsultasikan ke tenaga kesehatan yang berwenang.</p>
+        </div>
+        <div class="faq">
+          <div class="faq-item active" data-aos>
+            <button class="faq-button" type="button"><span>Apakah bisa konsultasi dulu sebelum terapi?</span><span>+</span></button>
+            <div class="faq-content"><p>Bisa. Anda dapat menghubungi WhatsApp terlebih dahulu untuk menjelaskan keluhan yang dirasakan.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Apakah cocok untuk badan pegal dan otot kaku?</span><span>+</span></button>
+            <div class="faq-content"><p>Ya, layanan ini cocok untuk keluhan badan pegal, otot kaku, salah urat ringan, dan badan terasa berat.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Berapa lama durasi terapi?</span><span>+</span></button>
+            <div class="faq-content"><p>Durasi menyesuaikan layanan dan kondisi keluhan. Silakan konsultasi terlebih dahulu melalui WhatsApp.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Apakah bisa datang langsung?</span><span>+</span></button>
+            <div class="faq-content"><p>Disarankan booking jadwal terlebih dahulu agar pelayanan lebih nyaman dan tidak menunggu lama.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="final-cta glass" data-aos>
+          <span class="eyebrow">Konsultasi dulu, lebih nyaman saat datang</span>
+          <h2 style="margin-top:16px">Siap membuat badan terasa lebih nyaman?</h2>
+          <p>Jangan tunggu keluhan semakin mengganggu aktivitas. Ceritakan keluhan Anda melalui WhatsApp dan dapatkan arahan layanan yang sesuai.</p>
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn btn-primary" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20konsultasi%20keluhan%20saya" target="_blank" rel="noopener">Chat WhatsApp Sekarang</a>
+            <a class="btn btn-ghost" href="#lokasi">Lihat Lokasi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 Wahyudi Terapis. Pijat Syaraf & Bekam Profesional.</span>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <div class="sticky-inner">
+      <span>Butuh arahan layanan? <strong>Konsultasi via WhatsApp</strong></span>
+      <a class="btn btn-primary" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20konsultasi%20terapi" target="_blank" rel="noopener">Chat WA</a>
+    </div>
+  </div>
+  <a class="wa-float" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20booking%20terapi" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+
+  <script>
+    const promoEnd = new Date();
+    promoEnd.setDate(promoEnd.getDate() + 2);
+    promoEnd.setHours(23, 59, 59, 999);
+    function pad(value) {
+      return String(value).padStart(2, "0");
+    }
+    function updateCountdown() {
+      const now = new Date();
+      const distance = Math.max(0, promoEnd - now);
+      const days = Math.floor(distance / 86400000);
+      const hours = Math.floor((distance % 86400000) / 3600000);
+      const minutes = Math.floor((distance % 3600000) / 60000);
+      const seconds = Math.floor((distance % 60000) / 1000);
+      document.getElementById("days").textContent = pad(days);
+      document.getElementById("hours").textContent = pad(hours);
+      document.getElementById("minutes").textContent = pad(minutes);
+      document.getElementById("seconds").textContent = pad(seconds);
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    document.querySelectorAll(".faq-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        button.closest(".faq-item").classList.toggle("active");
+      });
+    });
+
+    const counted = new WeakSet();
+    function animateCount(element) {
+      const target = Number(element.dataset.count || 0);
+      const suffix = element.dataset.suffix || "";
+      const duration = 1200;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = Math.round(target * eased);
+        element.textContent = target >= 1000 ? value.toLocaleString("id-ID") + "+" : value + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          entry.target.querySelectorAll("[data-count]").forEach((counter) => {
+            if (!counted.has(counter)) {
+              counted.add(counter);
+              animateCount(counter);
+            }
+          });
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    document.querySelectorAll("[data-aos], .stats-band").forEach((element) => revealObserver.observe(element));
+
+    const stickyCta = document.getElementById("stickyCta");
+    window.addEventListener("scroll", () => {
+      stickyCta.classList.toggle("show", window.scrollY > 620);
+    }, { passive: true });
+
+    const canvas = document.getElementById("particles");
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+    function resizeCanvas() {
+      canvas.width = window.innerWidth * devicePixelRatio;
+      canvas.height = window.innerHeight * devicePixelRatio;
+      ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+      particles = Array.from({ length: Math.min(90, Math.floor(window.innerWidth / 16)) }, () => ({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.8 + .4,
+        vx: (Math.random() - .5) * .24,
+        vy: (Math.random() - .5) * .24,
+        a: Math.random() * .55 + .18
+      }));
+    }
+    function drawParticles() {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > window.innerWidth) p.vx *= -1;
+        if (p.y < 0 || p.y > window.innerHeight) p.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(77,240,162," + p.a + ")";
+        ctx.fill();
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    resizeCanvas();
+    drawParticles();
+    window.addEventListener("resize", resizeCanvas);
+  </script>
+  <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
