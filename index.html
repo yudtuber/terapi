@@ -482,7 +482,7 @@
       left: 50%;
       bottom: 18px;
       z-index: 65;
-      width: min(650px, calc(100% - 112px));
+      width: min(600px, calc(100% - 112px));
       transform: translateX(-50%) translateY(90px);
       opacity: 0;
       pointer-events: none;
@@ -501,7 +501,19 @@
       backdrop-filter: blur(18px);
       box-shadow: 0 18px 48px rgba(0,0,0,.38);
     }
+    .sticky-inner span {
+      min-width: 0;
+      font-size: 14px;
+      line-height: 1.35;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
     .sticky-inner strong { color: var(--gold); }
+    .sticky-inner .btn {
+      flex: 0 0 auto;
+      white-space: nowrap;
+      padding-inline: 22px;
+    }
     [data-aos] { opacity: 0; transform: translateY(24px); transition: opacity .72s ease, transform .72s ease; }
     [data-aos].show { opacity: 1; transform: translateY(0); }
     @media (max-width: 980px) {
@@ -513,6 +525,34 @@
       .section-head { display: block; }
       .section-head p { margin-top: 12px; }
       .dashboard { right: 0; bottom: 0; }
+    }
+    @media (max-width: 760px) {
+      .sticky-cta {
+        left: 14px;
+        right: 14px;
+        bottom: 92px;
+        width: auto;
+        transform: translateY(90px);
+      }
+      .sticky-cta.show { transform: translateY(0); }
+      .sticky-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 12px;
+      }
+      .sticky-inner span {
+        display: block;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.35;
+      }
+      .sticky-inner .btn {
+        width: 100%;
+        min-height: 46px;
+      }
     }
     @media (max-width: 620px) {
       .container { width: min(100% - 28px, 1180px); }
@@ -529,9 +569,6 @@
       .hero-photo { width: 100%; min-height: 360px; }
       .dashboard { width: 92%; padding: 12px; }
       .quote { min-width: 300px; flex-basis: 300px; }
-      .sticky-cta { width: calc(100% - 92px); }
-      .sticky-inner { display: block; }
-      .sticky-inner span { display: block; margin-bottom: 8px; text-align: center; }
       .wa-float { width: 62px; padding: 0; }
     }
   </style>
@@ -607,8 +644,8 @@
     <section id="layanan">
       <div class="container">
         <div class="section-head" data-aos>
-          <h2>Layanan terapi</h2>
-          <p>Pilih layanan sesuai keluhan. Jika masih ragu, konsultasikan dulu melalui WhatsApp agar diarahkan dengan lebih tepat.</p>
+          <h2>Layanan yang Bisa Dibantu</h2>
+          <p>Setiap keluhan tubuh punya cerita masing-masing. Ceritakan dulu yang Anda rasakan lewat WhatsApp, nanti akan dibantu diarahkan ke terapi yang paling sesuai.</p>
         </div>
         <div class="grid-3">
           <article class="card" data-aos><div class="icon">PS</div><h3>Pijat Syaraf</h3><p>Membantu merilekskan otot, melancarkan peredaran darah, dan mengurangi rasa kaku pada tubuh.</p></article>
@@ -624,8 +661,8 @@
     <section>
       <div class="container">
         <div class="section-head" data-aos>
-          <h2>Before vs After</h2>
-          <p>Landing page ini menekankan edukasi dan konsultasi, bukan sekadar daftar layanan.</p>
+          <h2>Konsultasi Kesehatan</h2>
+          <p>Tujuannya sederhana: Anda tidak perlu menebak-nebak sendiri. Mulai dari cerita keluhan, lalu pelan-pelan diarahkan ke langkah terapi yang terasa paling nyaman.</p>
         </div>
         <div class="before-after">
           <article class="before-after-card before" data-aos>
@@ -645,8 +682,8 @@
     <section id="workflow">
       <div class="container">
         <div class="section-head" data-aos>
-          <h2>How It Works</h2>
-          <p>Alur dibuat sederhana agar calon pelanggan merasa aman sebelum datang terapi.</p>
+          <h2>Konsultasi yang Nyaman</h2>
+          <p>Prosesnya dibuat nyaman dan tidak terburu-buru, supaya Anda bisa merasakan lebih tenang sebelum menentukan jadwal terapi.</p>
         </div>
         <div class="workflow-map">
           <div class="flow-node" data-aos><strong>Chat WA</strong><span>Ceritakan keluhan yang dirasakan.</span></div>
@@ -661,13 +698,13 @@
     <section>
       <div class="container">
         <div class="section-head" data-aos>
-          <h2>Bonus edukasi yang didapat</h2>
+          <h2>Edukasi & Konsultasi</h2>
           <p>Setiap konsultasi bisa membantu Anda memahami kebiasaan tubuh yang perlu diperhatikan setelah terapi.</p>
         </div>
         <div class="grid-4">
           <article class="card" data-aos><h3>Panduan keluhan</h3><p>Arah awal untuk menjelaskan pegal, kaku, kesemutan, atau salah gerak.</p></article>
           <article class="card" data-aos><h3>Rekomendasi layanan</h3><p>Bantuan memilih pijat syaraf, bekam, atau kombinasi sesuai kebutuhan.</p></article>
-          <article class="card" data-aos><h3>Tips setelah terapi</h3><p>Arahan ringan agar tubuh tetap nyaman setelah sesi terapi.</p></article>
+          <article class="card" data-aos><h3>Tips setelah terapi</h3><p>Arahan ringan agar tubuh tetap rilexs setelah sesi terapi.</p></article>
           <article class="card" data-aos><h3>Reminder jadwal</h3><p>Konsultasi WA memudahkan pengaturan jadwal tanpa perlu menunggu lama.</p></article>
         </div>
       </div>
@@ -680,7 +717,7 @@
             <div>
               <span class="badge">Konsultasi prioritas</span>
               <h2 style="margin-top:16px">Ingin tahu layanan yang cocok?</h2>
-              <p class="lead">Nominal tidak dicantumkan di halaman ini agar calon pelanggan fokus pada edukasi dan memilih layanan berdasarkan keluhan. Untuk informasi lebih lanjut, silakan konsultasi melalui WhatsApp.</p>
+              <p class="lead">Kesehatan lebih penting maka pasien supaya fokus konsultasi pada keluhan sakit pasien. Untuk informasi lebih lanjut, silakan konsultasi melalui WhatsApp.</p>
               <div class="cta-row">
                 <a class="btn btn-primary" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20konsultasi%20layanan%20yang%20cocok" target="_blank" rel="noopener">Konsultasi via WhatsApp</a>
                 <a class="btn btn-ghost" href="#faq">Baca FAQ</a>
@@ -704,8 +741,8 @@
     <section id="video">
       <div class="container">
         <div class="section-head" data-aos>
-          <h2>Video terapi & edukasi</h2>
-          <p>Video TikTok Wahyudi Terapis ditampilkan langsung di halaman sebagai gambaran aktivitas layanan dan edukasi.</p>
+          <h2>Video Penanganan Terapi</h2>
+          <p>Video Wahyudi Terapis ditampilkan sebagai gambaran aktivitas layanan dan edukasi.</p>
         </div>
         <div class="video-embed-grid">
           <article class="video-card" data-aos>
@@ -763,7 +800,7 @@
     <section id="testimoni">
       <div class="container">
         <div class="section-head" data-aos>
-          <h2>Testimoni carousel</h2>
+          <h2>Testimoni Pasien</h2>
           <p>Beberapa impresi pelanggan setelah berkonsultasi dan melakukan terapi.</p>
         </div>
         <div class="testimonial-wrap" data-aos>
@@ -783,7 +820,7 @@
       <div class="container">
         <div class="section-head" data-aos>
           <h2>Lokasi Wahyudi Terapis</h2>
-          <p>Silakan lihat lokasi melalui Google Maps atau hubungi WhatsApp untuk memastikan jadwal dan arahan lokasi.</p>
+          <p>Silakan lihat lokasi melalui Google Maps atau hubungi WhatsApp atau memastikan jadwal dan lokasi.</p>
         </div>
         <div class="map-wrap glass" data-aos>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126528.19426104252!2d110.73147285033946!3d-7.682494480979212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a3e956bf921ed%3A0x7e327736b84f3260!2sWAHYUDI%20TERAPIS!5e0!3m2!1sid!2sid!4v1783435025902!5m2!1sid!2sid" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -798,8 +835,8 @@
     <section id="faq">
       <div class="container">
         <div class="section-head" data-aos>
-          <h2>Garansi & FAQ</h2>
-          <p>Informasi penting sebelum melakukan terapi. Untuk kondisi medis serius, tetap konsultasikan ke tenaga kesehatan yang berwenang.</p>
+          <h2>FAQ</h2>
+          <p>Konsultasikan dulu sebelum melakukan terapi. Untuk kondisi medis serius, tetap konsultasikan ke tenaga kesehatan yang berwenang.</p>
         </div>
         <div class="faq">
           <div class="faq-item active" data-aos>
@@ -845,8 +882,8 @@
 
   <div class="sticky-cta" id="stickyCta" aria-hidden="true">
     <div class="sticky-inner">
-      <span>Butuh arahan layanan? <strong>Konsultasi via WhatsApp</strong></span>
-      <a class="btn btn-primary" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20konsultasi%20terapi" target="_blank" rel="noopener">Chat WA</a>
+      <span>Butuh arahan layanan? <strong>Konsultasi WA</strong></span>
+      <a class="btn btn-primary" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20konsultasi%20terapi" target="_blank" rel="noopener">Konsultasi WA</a>
     </div>
   </div>
   <a class="wa-float" href="https://wa.me/6285647678910?text=Halo%20Wahyudi%20Terapis%2C%20saya%20ingin%20booking%20terapi" target="_blank" rel="noopener" aria-label="WhatsApp">
