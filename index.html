@@ -879,7 +879,7 @@
       <span>&copy; 2026 Wahyudi Terapis. Pijat Syaraf & Bekam Profesional.</span>
     </div>
   </footer>
-
+  
   <div class="sticky-cta" id="stickyCta" aria-hidden="true">
     <div class="sticky-inner">
       <span>Butuh arahan layanan? <strong>Konsultasi WA</strong></span>
@@ -894,9 +894,11 @@
     const promoEnd = new Date();
     promoEnd.setDate(promoEnd.getDate() + 2);
     promoEnd.setHours(23, 59, 59, 999);
+
     function pad(value) {
       return String(value).padStart(2, "0");
     }
+
     function updateCountdown() {
       const now = new Date();
       const distance = Math.max(0, promoEnd - now);
@@ -909,16 +911,18 @@
       document.getElementById("minutes").textContent = pad(minutes);
       document.getElementById("seconds").textContent = pad(seconds);
     }
+
     updateCountdown();
     setInterval(updateCountdown, 1000);
 
     document.querySelectorAll(".faq-button").forEach((button) => {
       button.addEventListener("click", () => {
-        button.closest(".faq-item").classList.toggle("active");
+        const item = button.closest(".faq-item");
+        item.classList.toggle("active");
       });
     });
 
-    const counted = new WeakSet();
+    const countValues = new WeakSet();
     function animateCount(element) {
       const target = Number(element.dataset.count || 0);
       const suffix = element.dataset.suffix || "";
@@ -933,13 +937,14 @@
       }
       requestAnimationFrame(tick);
     }
+
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
           entry.target.querySelectorAll("[data-count]").forEach((counter) => {
-            if (!counted.has(counter)) {
-              counted.add(counter);
+            if (!countValues.has(counter)) {
+              countValues.add(counter);
               animateCount(counter);
             }
           });
@@ -947,6 +952,7 @@
         }
       });
     }, { threshold: 0.14 });
+
     document.querySelectorAll("[data-aos], .stats-band").forEach((element) => revealObserver.observe(element));
 
     const stickyCta = document.getElementById("stickyCta");
@@ -954,40 +960,11 @@
       stickyCta.classList.toggle("show", window.scrollY > 620);
     }, { passive: true });
 
-    const canvas = document.getElementById("particles");
-    const ctx = canvas.getContext("2d");
-    let particles = [];
-    function resizeCanvas() {
-      canvas.width = window.innerWidth * devicePixelRatio;
-      canvas.height = window.innerHeight * devicePixelRatio;
-      ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
-      particles = Array.from({ length: Math.min(90, Math.floor(window.innerWidth / 16)) }, () => ({
-        x: Math.random() * window.innerWidth,
-        y: Math.random() * window.innerHeight,
-        r: Math.random() * 1.8 + .4,
-        vx: (Math.random() - .5) * .24,
-        vy: (Math.random() - .5) * .24,
-        a: Math.random() * .55 + .18
-      }));
-    }
-    function drawParticles() {
-      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-      particles.forEach((p) => {
-        p.x += p.vx;
-        p.y += p.vy;
-        if (p.x < 0 || p.x > window.innerWidth) p.vx *= -1;
-        if (p.y < 0 || p.y > window.innerHeight) p.vy *= -1;
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(77,240,162," + p.a + ")";
-        ctx.fill();
+    document.querySelectorAll("[data-track]").forEach((element) => {
+      element.addEventListener("click", () => {
+        console.log("CTA click:", element.dataset.track);
       });
-      requestAnimationFrame(drawParticles);
-    }
-    resizeCanvas();
-    drawParticles();
-    window.addEventListener("resize", resizeCanvas);
+    });
   </script>
-  <script async src="https://www.tiktok.com/embed.js"></script>
 </body>
 </html>
